@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Web.Http;
 
 namespace ContactMgmt.Api
@@ -19,6 +17,14 @@ namespace ContactMgmt.Api
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting =
+                Newtonsoft.Json.Formatting.Indented;
+
+            config.Formatters.JsonFormatter.SerializerSettings.Converters = new List<Newtonsoft.Json.JsonConverter>
+            {
+                new Newtonsoft.Json.Converters.StringEnumConverter()
+            };
         }
     }
 }

@@ -1,0 +1,128 @@
+﻿.alpha-nums-table {
+    max-height: 400px;
+    font-size: x-small;
+    font-weight: bold;
+    font-family: Calibri;
+
+    tbody{
+        tr td{
+            padding: 1px;
+        }
+    }
+}
+
+.directory-container {
+    #table1 {
+        display: inline-block;
+        width: auto;
+        max-width: auto;
+
+        tbody {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            display: inline-block;
+            min-height: 400px;
+            max-height: 400px;
+            min-width: 400px;
+
+            tr > td {
+                min-width: 400px;
+            }
+        }
+    }
+
+    #table2 {
+        display: inline-block;
+        width: auto;
+        width: auto;
+
+        tbody {
+            display: inline-block;
+            tr td{
+                border: 1px solid gray;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #upsertArea {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 15px;
+
+        .action-buttons{
+            .delete{
+                float: left;
+            }
+            .upsert{
+                float: right;
+            }
+        }
+    }
+}
+
+.contact-card {
+
+    .contact-card-photo {
+        padding: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        .photo {
+            img {
+                max-height: 40px;
+                max-width: 40px;
+            }
+        }
+
+        .no-photo {
+            font-family: cursive;
+            font-weight: bold;
+            padding: 10px;
+            font-size: larger;
+            background-color: #6495ed;
+            color: white;
+        }
+    }
+
+    .contact-card-details {
+        padding: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        .name {
+            font-weight: bold;
+            display: block;
+        }
+
+        .phone {
+            display: block;
+            img{
+                height: 15px;
+                cursor: pointer;
+            }
+        }
+
+        .email {
+            display: block;
+        }
+    }
+}
+
+#selectedUserPhoto {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    .no-photo {
+        font-family: cursive;
+        font-weight: bolder;
+        padding: 10px;
+        font-size: x-large;
+        background-color: #6495ed;
+        color: white;
+    }
+
+    .photo {
+
+    }
+}

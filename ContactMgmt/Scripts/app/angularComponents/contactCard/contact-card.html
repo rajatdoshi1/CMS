@@ -1,0 +1,24 @@
+﻿<span class="contact-card">
+    <span class="contact-card-photo">
+        <span class="no-photo" data-ng-if="$ctrl.contact.Photo == null">
+            {{$ctrl.getPhotoText()}}
+        </span>
+        <span class="photo" data-ng-if="$ctrl.contact.Photo != null">
+            <img data-ng-src="{{$ctrl.contact.Photo}}" />
+        </span>
+    </span>
+    <span class="contact-card-details">
+        <span class="name">
+            {{$ctrl.contact.FirstName + " " + $ctrl.contact.LastName}}
+        </span>
+        <span class="phone">
+            <span id="{{'copy-' + $ctrl.contact.ContactId}}">{{$ctrl.contact.PrimaryContact}}</span> 
+            <img src="web/Content/copyIcon.png" data-ng-click="$ctrl.copyToClipboard()" />
+        </span>
+        <span class="email">
+            <a href="{{'mailto:' + $ctrl.contact.Email}}">
+                {{$ctrl.contact.Email}}
+            </a>
+        </span>
+    </span>
+</span>

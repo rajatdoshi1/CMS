@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactMgmt.Api", "ContactM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactMgmt.VirtualRoot", "ContactMgmt.VirtualRoot\ContactMgmt.VirtualRoot.csproj", "{6ACA4C4D-16F9-4D80-AEB4-563A9B5CDA8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactMgmt.DbManager", "ContactMgmt.DbManager\ContactMgmt.DbManager.csproj", "{E5618294-378B-4C54-BA2C-E4DAE6E4345E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6ACA4C4D-16F9-4D80-AEB4-563A9B5CDA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ACA4C4D-16F9-4D80-AEB4-563A9B5CDA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ACA4C4D-16F9-4D80-AEB4-563A9B5CDA8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5618294-378B-4C54-BA2C-E4DAE6E4345E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5618294-378B-4C54-BA2C-E4DAE6E4345E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5618294-378B-4C54-BA2C-E4DAE6E4345E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5618294-378B-4C54-BA2C-E4DAE6E4345E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

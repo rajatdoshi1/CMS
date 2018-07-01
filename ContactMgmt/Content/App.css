@@ -1,0 +1,96 @@
+﻿.alpha-nums-table {
+  max-height: 400px;
+  font-size: x-small;
+  font-weight: bold;
+  font-family: Calibri;
+}
+.alpha-nums-table tbody tr td {
+  padding: 1px;
+}
+.directory-container #table1 {
+  display: inline-block;
+  width: auto;
+  max-width: auto;
+}
+.directory-container #table1 tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: inline-block;
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 400px;
+}
+.directory-container #table1 tbody tr > td {
+  min-width: 400px;
+}
+.directory-container #table2 {
+  display: inline-block;
+  width: auto;
+}
+.directory-container #table2 tbody {
+  display: inline-block;
+}
+.directory-container #table2 tbody tr td {
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.directory-container #upsertArea {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 15px;
+}
+.directory-container #upsertArea .action-buttons .delete {
+  float: left;
+}
+.directory-container #upsertArea .action-buttons .upsert {
+  float: right;
+}
+.contact-card .contact-card-photo {
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact-card .contact-card-photo .photo img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.contact-card .contact-card-photo .no-photo {
+  font-family: cursive;
+  font-weight: bold;
+  padding: 10px;
+  font-size: larger;
+  background-color: #6495ed;
+  color: white;
+}
+.contact-card .contact-card-details {
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact-card .contact-card-details .name {
+  font-weight: bold;
+  display: block;
+}
+.contact-card .contact-card-details .phone {
+  display: block;
+}
+.contact-card .contact-card-details .phone img {
+  height: 15px;
+  cursor: pointer;
+}
+.contact-card .contact-card-details .email {
+  display: block;
+}
+#selectedUserPhoto {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+#selectedUserPhoto .no-photo {
+  font-family: cursive;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: x-large;
+  background-color: #6495ed;
+  color: white;
+}
