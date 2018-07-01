@@ -48,7 +48,6 @@ namespace ContactMgmt.Api.Handlers
 
                 contact.TagValues = tags;
                 dbEntities.Contacts.Add(contact);
-                dbEntities.SaveChanges();
             }
             else
             {
@@ -62,9 +61,15 @@ namespace ContactMgmt.Api.Handlers
                 {
                     if (dbContact.TagValues.All(x => x.TagType_Id != tag.TagTypeId))
                         dbContact.TagValues.Add(new TagValue() { TagType_Id = tag.TagTypeId, Value = tag.Value, Contact_Id = contactInformation.ContactId });
+                    else
+                    {
+                        var contact = dbContact.TagValues
+                            .First(x => x.TagType_Id == tag.TagTypeId);
+                        contact.Value = tag.Value;
+                    }   
                 }
-                dbEntities.SaveChanges();
             }
+            dbEntities.SaveChanges();
         }
 
         public void DeleteContact(long id)

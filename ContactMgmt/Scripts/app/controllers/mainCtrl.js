@@ -131,16 +131,7 @@
 
             dataService.getFullContactInfo(contactId)
                 .then(function (response) {
-                    if ($scope.selectedContact.ContactId == -1)
-                        $scope.selectedContact = response;
-                    else {
-                        $scope.selectedContact['TagValues'] = response.TagValues;
-                        if ($scope.selectedContact.TagValues && $scope.selectedContact.TagValues.length) {
-                            $scope.selectedContact.TagValues.some(function(tag) {
-                                $scope.customTagsModel[tag.TagTypeId] = tag.Value;
-                            });
-                        }
-                    }
+                    $scope.selectedContact = response;
                 });
         }
 
