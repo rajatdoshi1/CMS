@@ -81,6 +81,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ContactMgmtModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="CMS.bak" />
     <None Include="ContactMgmtModel.edmx.diagram">
       <DependentUpon>ContactMgmtModel.edmx</DependentUpon>
     </None>
